@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            position: absolute;
+            display: grid;
+            grid-template-columns: repeat(3, 100px) auto repeat(3,100px);
+            grid-template-rows: 50px auto 60px auto 50px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        img {
+            grid-area: 2/4/3/5;
+            justify-self: center;
+            align-self: end;
+            padding: 0;
+        }
+        .header{
+            justify-self: center;
+            align-self: center;
+            padding: 0;
+        }
+        a:link {
+                color: rgb(65, 65, 65);
+                text-decoration: none;
+        }
+        a:visited{
+                color: rgb(65, 65, 65);
+                text-decoration: none;
+        }
+        a:hover{
+                text-decoration: underline;
+                color: rgb(65, 65, 65);
+        }
+        .about{
+            grid-area: 1/1/2/2;
+        }
+        .store{
+            grid-area: 1/2/2/3;
+        }
+        .gmail{
+            grid-area: 1/5/2/6;
+        }
+        .images{
+            grid-area: 1/6/2/7;
+        }
+        .signin{
+            background-color: rgb(37, 126, 228);
+            color: white;
+            border-radius: 3px;
+            grid-area: 1/7/2/8;
+            padding: 7px 15px;
+        }
+        button.signin:hover{
+            border: 2px solid rgb(37, 126, 228);
+            border-radius: 3px;
+        }
+        input{
+            grid-area: 3/4/4/5;
+            height: 30px;
+            width: 50%;
+            justify-self: center;
+            align-self: center;
+        }
+        div{
+            display: flex;
+            grid-area: 4/4/5/5;
+            justify-content: center;
+            align-content: center;
+            padding: 10px;
+        }
+        .search{
+            height: 35px;
+            background-color: rgb(238, 238, 238);
+            border: 0px;
+            width: 200px;
+            color:rgb(116, 116, 116);
+            border-radius: 3px;
+            margin: 0 5px;
+        }
+        button.search:hover{
+            color: black;
+            border: 1px solid rgb(218, 216, 216);
+            border-radius: 3px;
+        }
+        .advertising{
+            grid-area: 6/1/7/2;
+        }
+        .business{
+            grid-area: 6/2/7/3;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hsw{
+            grid-area: 6/3/7/5;
+        }
+        .privacy{
+            grid-area: 6/5/7/6;
+        }
+        .terms{
+            grid-area: 6/6/7/7;
+        }
+        .settings{
+            grid-area: 6/7/7/8;
+        }
+        .footer{
+            justify-self: start;
+            align-self: end;
+            padding: 0;
+        }
+    </style>
+    <body>
+            <a href="" class="about header">About</a>
+            <a href="" class="store header">Store</a>
+            <a href="" class="gmail header">Gmail</a>
+            <a href="" class="images header">Images</a>
+            <button class="signin header">Sign In</button>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+            <input type="text"><br><br>
+        <div>
+            <button class="search">Google Search</button>
+            <button class="search">I'm Feeling Lucky</button>
+        </div>
+            <a href="" class="advertising footer">Advertising</a>
+            <a href="" class="business footer">Business</a>
+            <a href="" class="hsw footer">How Search Works</a>
+            <a href="" class="privacy footer">Privacy</a>
+            <a href="" class="terms footer">Terms</a>
+            <a href="" class="settings footer">Settings</a>
+    </body>
+</html>
